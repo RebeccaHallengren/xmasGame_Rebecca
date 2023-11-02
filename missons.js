@@ -50,6 +50,7 @@ const pages = [
       Text: "??",
       nextPage: 3,
     },
+    backgroundImage: 'URL("Items/BackgroundMisson3.png")', //Backgrundsbilden för första uppdraget
   },
   {
     Headers: "Uppdrag 4",
@@ -66,5 +67,6 @@ const pages = [
       Text: "??",
       nextPage: 4,
     },
+    backgroundImage: 'URL("Items/BackgroundMission4.png")', //Backgrundsbilden för första uppdraget
   },
 ];
