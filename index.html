@@ -8,7 +8,7 @@
     <script src="missons.js"></script>
     <title>XmasWorld</title>
   </head>
-  <body>
+  <body id="body">
     <!-- Desctiption of the xmas world and enter your name -->
     <div class="introWrapper">
       <div class="introContainer">
@@ -20,11 +20,24 @@
           type="string"
           id="stringName"
           required
-          placeholder="Anna Andersson"
+          placeholder="Skriv in ditt namn"
         />
       </div>
       <div class="introBtnHolder">
-        <button id="introBtn"><!-- JS --></button>
+        <button id="introBtn">Start</button>
+      </div>
+    </div>
+
+    <!-- Header of inventory and name of player -->
+    <div class="header">
+      <div class="inventory">
+        <span class="item0"></span>
+        <span class="item1"></span>
+        <span class="item2"></span>
+        <span class="item3"></span>
+      </div>
+      <div class="nameContainer">
+        <h1 class="name"><!-- JS --></h1>
       </div>
     </div>
 
@@ -35,13 +48,13 @@
         <p class="missionDescription"><!-- JS --></p>
       </div>
       <div class="missionBtnHolder">
+        <button id="option0"><!-- JS --></button>
         <button id="option1"><!-- JS --></button>
         <button id="option2"><!-- JS --></button>
-        <button id="option3"><!-- JS --></button>
       </div>
     </div>
 
-    <!-- If you succed or not with the task -->
+    <!-- If you succed or not with the task/mission -->
     <span class="congrats"><!-- JS --></span>
     <span class="fail"><!-- JS --></span>
 
