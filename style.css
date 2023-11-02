@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dancing+Script&family=Great+Vibes&family=Griffy&family=Prompt:wght@100;200&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: griffy;
+}
