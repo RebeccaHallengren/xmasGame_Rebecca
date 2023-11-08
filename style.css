@@ -9,9 +9,59 @@
 
 #body {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-image: center;
 }
 
-.inputName,
-.introBtnHolder {
+.missionWrapper {
+  background-color: white;
+  padding: 30px;
+  float: right;
+  max-width: 30%;
+  height: 50%vh;
+  font-size: 25px;
+}
+
+.missionBtnHolder {
+  margin-top: 7%;
+}
+
+#option0,
+#option1,
+#option2 {
+  background-color: rgb(8, 62, 8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+  font-size: 25px;
+}
+
+#option0:hover,
+#option1:hover,
+#option2:hover {
+  background-color: rgb(86, 1, 1);
+}
+
+.introWrapper {
+  visibility: hidden;
+}
+
+.rightAnswer {
+  display: flex;
   display: none;
+  flex-direction: column;
+  border-radius: 30px;
+  text-align: center;
+  background: white;
+  font-size: 35px;
+  width: 20%;
+  margin: auto;
+}
+
+#inventoryChristmasBall {
+  width: 150px;
+  margin: auto;
 }
