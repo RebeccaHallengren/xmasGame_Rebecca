@@ -9,6 +9,9 @@
     <title>XmasWorld</title>
   </head>
   <body id="body">
+    <!-- Inventory -->
+    <span class="inventoryCount"></span>
+
     <!-- first page -->
     <div class="introWrapper">
       <div class="introContainer">
@@ -53,12 +56,22 @@
     <!-- If you succed or not with the task/mission -->
     <div class="rightAnswer">
       <span class="congrats"
-        >Grattis! Du svarade rätt och har nu vunnit tre julkulor!</span
+        >Grattis! <br />Du svarade rätt och har nu<br />
+        vunnit tre julkulor!</span
       >
       <img
-        src="Items/julgranskula.jpg"
-        alt="christmasball"
-        id="inventoryChristmasBall"
+        src="Items/happyElf.png"
+        id="rightAnswerImg"
+        alt="happy elf jumping"
+      />
+    </div>
+
+    <div class="wrongAnswer">
+      <span class="fail">Tyvärr det var fel svar!</span>
+      <img
+        src="Items/sadElf.png"
+        id="wrongAnswerImg"
+        alt="sad elf with arms crossed"
       />
     </div>
   </body>

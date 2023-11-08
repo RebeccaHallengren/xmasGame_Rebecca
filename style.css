@@ -10,15 +10,14 @@
 #body {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: center;
 }
 
 .missionWrapper {
-  background-color: white;
+  background-color: rgba(49, 29, 199, 0.5);
+  color: white;
   padding: 30px;
-  float: right;
-  max-width: 30%;
-  height: 50%vh;
+  border-radius: 10px;
+  max-width: 50%;
   font-size: 25px;
 }
 
@@ -49,19 +48,22 @@
   visibility: hidden;
 }
 
-.rightAnswer {
-  display: flex;
+.rightAnswer,
+.wrongAnswer {
+  font-size: 20px;
+  max-width: 20%;
+  color: white;
+  background-color: rgba(49, 29, 199, 0.5);
   display: none;
-  flex-direction: column;
-  border-radius: 30px;
-  text-align: center;
-  background: white;
-  font-size: 35px;
-  width: 20%;
-  margin: auto;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 40px;
 }
 
-#inventoryChristmasBall {
-  width: 150px;
-  margin: auto;
+#wrongAnswerImg,
+#rightAnswerImg {
+  width: 400px;
+  border-radius: 5%;
+
+  display: block;
 }

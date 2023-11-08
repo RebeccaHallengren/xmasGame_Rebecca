@@ -1,24 +1,7 @@
 window.addEventListener("DOMContentLoaded", main);
 
 function main() {
-  startGame();
   moveOn();
-}
-
-function startGame() {
-  const startHeader = document.querySelector(".introHeader");
-  const startText = document.querySelector(".introDescription");
-  const startInput = document.querySelector(".inputName");
-  const startButton = document.querySelector("#introBtn");
-
-  startHeader.textContent = firstPage.HeaderStart;
-  startText.textContent = firstPage.TextStart;
-  startInput.textContent = firstPage.InputStart;
-  startButton.textContent = firstPage.BtnStart.Text;
-
-  startButton.addEventListener("click", function () {
-    addName();
-  });
 }
 
 function moveOn() {
@@ -59,13 +42,13 @@ function moveOn() {
 function checkAnswer(isCorrect, item, nextPage) {
   if (isCorrect === true) {
     inventory.push(item);
-    showMessageBox(nextPage);
+    showMessageRightAnswer(nextPage);
   } else if (isCorrect === false) {
-    goToNextpage(nextPage);
+    showMessageWrongAnswer(nextPage);
   }
 }
-
-function showMessageBox(nextPage) {
+//Kan man slå ihop right and wrong answer?? If / else
+function showMessageRightAnswer(nextPage) {
   const rightAnswer = document.querySelector(".rightAnswer");
 
   rightAnswer.style.display = "block";
@@ -79,6 +62,17 @@ function showMessageBox(nextPage) {
 function goToNextpage(pageIndex) {
   activepage = pageIndex;
   moveOn();
+}
+
+function showMessageWrongAnswer(nextPage) {
+  const wrongAnswer = document.querySelector(".wrongAnswer");
+
+  wrongAnswer.style.display = "block";
+
+  setTimeout(function () {
+    wrongAnswer.style.display = "none";
+    goToNextpage(nextPage);
+  }, 3000);
 }
 
 //Till förstasidan.
