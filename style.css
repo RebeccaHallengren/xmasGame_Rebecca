@@ -4,21 +4,37 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: griffy;
 }
 
 #body {
   background-size: cover;
+  background-image: url(Items/gingerbread.jpg);
   background-repeat: no-repeat;
 }
 
+.header {
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: end;
+}
+
+#inventorySymbol {
+  width: 70px;
+}
+
 .missionWrapper {
-  background-color: rgba(49, 29, 199, 0.5);
-  color: white;
+  background-color: rgba(252, 252, 252, 0.5);
+  color: black;
   padding: 30px;
   border-radius: 10px;
-  max-width: 50%;
+  max-width: 500px;
+  margin: auto;
   font-size: 25px;
+}
+
+.missionHeader {
+  font-family: griffy;
 }
 
 .missionBtnHolder {
@@ -35,7 +51,8 @@
   border: none;
   cursor: pointer;
   transition: 0.7s;
-  font-size: 25px;
+  font-size: 15px;
+  font-family: Caveat;
 }
 
 #option0:hover,
@@ -50,14 +67,18 @@
 
 .rightAnswer,
 .wrongAnswer {
-  font-size: 20px;
-  max-width: 20%;
-  color: white;
-  background-color: rgba(49, 29, 199, 0.5);
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
   display: none;
-  padding: 30px;
-  margin-top: 30px;
-  border-radius: 40px;
+  font-family: griffy;
+}
+
+.congrats,
+.fail {
+  background-color: rgba(252, 252, 252, 0.5);
+  padding: 15px;
+  border-radius: 10px;
 }
 
 #wrongAnswerImg,

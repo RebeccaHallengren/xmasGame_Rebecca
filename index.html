@@ -10,7 +10,21 @@
   </head>
   <body id="body">
     <!-- Inventory -->
-    <span class="inventoryCount"></span>
+    <header class="header">
+
+        <div class="showInventory">
+            <img src="Items/julgranskula.jpg" id="inventorySymbol" />
+            <span class="item0"></span>
+        </div>
+    
+    
+        
+      </div>
+      <div class="nameContainer">
+        <h1 id="name"><!-- JS --></h1>
+      </div>
+    </header>
+
 
     <!-- first page -->
     <div class="introWrapper">
@@ -33,12 +47,7 @@
 
     <!--  inventory and name of player -->
 
-    <div class="inventory">
-      <span class="item0"></span>
-    </div>
-    <div class="nameContainer">
-      <h1 id="name"><!-- JS --></h1>
-    </div>
+  
 
     <!-- Missions -->
     <div class="missionWrapper">
@@ -55,24 +64,23 @@
 
     <!-- If you succed or not with the task/mission -->
     <div class="rightAnswer">
-      <span class="congrats"
-        >Grattis! <br />Du svarade rätt och har nu<br />
-        vunnit tre julkulor!</span
-      >
       <img
-        src="Items/happyElf.png"
+        src="Items/HappyElf.png"
         id="rightAnswerImg"
         alt="happy elf jumping"
       />
+      <span class="congrats"
+        >Wohooooo! <br />Du har precis räddat en del av julen! Som tack vinner du en julkula!</span
+      >
     </div>
 
     <div class="wrongAnswer">
-      <span class="fail">Tyvärr det var fel svar!</span>
       <img
-        src="Items/sadElf.png"
+        src="Items/SadElf.png"
         id="wrongAnswerImg"
         alt="sad elf with arms crossed"
       />
+      <span class="fail">Tyvärr det var fel svar!</span>
     </div>
   </body>
 </html>
