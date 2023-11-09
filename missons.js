@@ -122,17 +122,14 @@ const pages = [
     Btn1: {
       Text: "Ståltråd",
       isCorrect: false,
-      nextPage: 5,
     },
     Btn2: {
       Text: "Yxa",
       isCorrect: true,
-      nextPage: 5,
     },
     Btn3: {
       Text: "Skruvdragare",
       isCorrect: false,
-      nextPage: 5,
     },
     backgroundImage: 'URL("Items/christmasTreeCar.png")',
   },
