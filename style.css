@@ -85,6 +85,14 @@
 #rightAnswerImg {
   width: 400px;
   border-radius: 5%;
-
   display: block;
+}
+
+.end-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: griffy;
+  margin-top: 400px;
 }

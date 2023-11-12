@@ -1,18 +1,10 @@
-//Obejkt för startsida
-const firstPage = {
-  HeaderStart: "Rädda Julen!",
-  TextStart:
-    "Julen är snart här och det är en magisk atmosfär. Tomtens förberedelser är många och han varje dag problem stånga. Eftersom du en nisse är, du behöver avhjälpa tomten med allt vad det innebär. Om allt faller väl ut, du sprider glädje vid varje husknut.",
-  InputStart: {
-    Text: "Skriv ditt namn",
-  },
-  BtnStart: {
-    Text: "Börja spela",
-  },
-  backgroundImage: 'URL("Items/BackgroundStart.png")',
-};
-
 let activepage = 0;
+/**@typedef {{Header: string, Text: string, isCorrect:boolean, nextPage: number}} page*/
+
+/**
+ * objects in the array represent each side of the game.
+ * @type {pages[]}
+ */
 
 const pages = [
   {
