@@ -16,3 +16,5 @@ XmasWorld is an interactive game where players take on the role of Santa's helpe
 Depending on the number of bauble the player has collected, different ending messages will be displayed.
 
 [Min html fil](./index.html)
+
+GITHUB pages

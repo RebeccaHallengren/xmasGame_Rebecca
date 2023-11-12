@@ -1,7 +1,20 @@
 window.addEventListener("DOMContentLoaded", main);
 
-//**Global message, used in the end of game */
+/**Global message, used in the end of game */
 let message = document.createElement("h1");
+
+/** Global sound*/
+const correctSound = new Audio("Items/rightAnswerSound.mp3");
+const WrongSound = new Audio("Items/wrongAnswerSound.mp3");
+
+/** Get sounds from variabel correctSound and plays it*/
+function playCorrectSound() {
+  correctSound.play();
+}
+/** Get sounds from variabel WrongSound and plays it*/
+function playWrongSound() {
+  WrongSound.play();
+}
 
 /**Array for christmasballs */
 let inventory = [];
@@ -74,8 +87,10 @@ function checkAnswer(isCorrect, Item1, nextPage) {
     inventory.push(Item1);
     updateInventoryCount();
     showMessageRightAnswer(nextPage);
+    playCorrectSound();
   } else if (isCorrect === false) {
     showMessageWrongAnswer(nextPage);
+    playWrongSound();
   }
 }
 

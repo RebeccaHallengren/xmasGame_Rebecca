@@ -1,0 +1,7 @@
+Local storeage
+Startsida med instruktioner för spelet - if activepage === 0
+
+Om man hinner vill jag dölja en julgransstjärna på någon av bilderna. 
+
+Definera mer rädda julen! Kanske tomten kan komma fram i slutet och tacka dig för att du spridit julstämning!
+
