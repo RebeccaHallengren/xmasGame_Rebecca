@@ -1,28 +1,18 @@
-# Title
+# XmasWorld Game
 
-## Subtitle
+## Description
 
-### Subsubtitle
+XmasWorld is an interactive game where players take on the role of Santa's helper, performing various missions to save Christmas. The game consists of multiple pages with different tasks and the opportunity to collect Christmasbauble in their inventory.
 
-- List item 1
-- List item 2
+## Gameplay Instructions
 
----
+- Start the game by open `index.html` in your web browser
+- Complete various missions by selecting answers on each page.
+- Collect Christmasbauble by answering questions correctly.
+- Try to collect as many bauble as possible for the best ending.
 
-**Bold text**
-**Bold text**
-_Italic text_
-_Italic text_
+## Game Ending
 
-> "aasdasd asdas da sdhgas d
-> asdasdasd"
-
-`git status`
-
-```
-<body>
-  hello world
-</body>
-```
+Depending on the number of bauble the player has collected, different ending messages will be displayed.
 
 [Min html fil](./index.html)
