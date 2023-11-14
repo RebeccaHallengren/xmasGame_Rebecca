@@ -8,11 +8,11 @@ XmasWorld is an interactive game where players take on the role of Santa's helpe
 
 - Start the game by open `index.html` in your web browser
 - Complete various missions by selecting answers on each page.
-- Collect Christmasbauble by answering questions correctly.
-- Try to collect as many bauble as possible for the best ending.
+- Collect Christmas smileys by answering questions correctly.
+- Try to collect as many smileys as possible for the best ending.
 
 ## Game Ending
 
-Depending on the number of bauble the player has collected, different ending messages will be displayed.
+Depending on the number of smileys the player has collected, different ending messages will be displayed.
 
 [Min html fil](https://rebeccahallengren.github.io/xmasGame_Rebecca/)

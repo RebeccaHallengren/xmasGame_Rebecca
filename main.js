@@ -18,12 +18,11 @@ function playWrongSound() {
   WrongSound.play();
 }
 
-/**Array for christmasballs */
+/**Array for christmas spirit symbol */
 let inventory = [];
 
 /**Not needed in this case, can be used to get a good overview of the flow */
 function main() {
-  /* checkStart(); */
   moveOn();
 }
 
@@ -106,7 +105,6 @@ function displayInventoryCount() {
 /**criteria for when the correct answer should be displayed. On index 5 nothing is displayed.
  * @param {number} nextPage
  */
-
 function showMessageRightAnswer(nextPage) {
   if (activepage === 5) {
   } else {
@@ -196,8 +194,6 @@ function goToNextpage(pageIndex) {
   moveOn();
 }
 
-//Till förstasidan. Har ej lagt in funktionen ännu.
-
 /* function addName() {
     const button = document.getElementById("introBtn");
     button.onclick = function () {
@@ -206,26 +202,4 @@ function goToNextpage(pageIndex) {
   
       name.innerHTML = "Tomtenissen " + stringName.value + " räddar julen!";
     };
-} */
-
-/* //VARFÖR FUNGERAR DET INTE??
-function checkStart() {
-  const gameHeader = document.querySelector(".gameHeader");
-  const gameText = document.querySelector(".gameText");
-  const startGameBtn = document.querySelector(".startGame");
-
-  if (activepage === 0) {
-    hideMission();
-    gameHeader.textContent = "Avhjälp Tomten och sprid julglädje!";
-    gameText.textContent =
-      "Julen är snart här och det är en magisk atmosfär. Tomtens förberedelser är många och han varje dag problem stånga. Eftersom du en nisse är, du behöver avhjälpa tomten med allt vad det innebär. Om allt faller väl ut, du sprider glädje vid varje husknut.";
-    startGameBtn.textContent = "Starta spel!";
-
-    document.body.appendChild(gameHeader);
-    document.body.appendChild(gameText);
-    document.body.appendChild(startGameBtn);
-  } else {
-    gameHeader.textContent = "";
-    gameText.textContent = "";
-  }
 } */
