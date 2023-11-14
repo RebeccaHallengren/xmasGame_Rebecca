@@ -10,6 +10,7 @@ const pages = [
   {
     Headers: "Rädda pepparkakorna",
     Text: "Vid jul man ofta bakar, och tänder sina ljusstakar. Pepparkakor är vid denna tid en trendig deg, men här håller man på att begå ett felsteg. Vilken av ingrediens ska tas bort? ",
+    Item1: 'URL("Items/XmasFeeling.webp")',
     Btn1: {
       Text: "Smör",
       isCorrect: false,
@@ -31,6 +32,7 @@ const pages = [
   {
     Headers: "Julbrevet har kommit bort!",
     Text: "Om man inte skickat har, får man oftast det som blev kvar. Milo har glömt skicka sin önskemlista till tomten i år, det skulle han gjort i förrgår. Hjälp Milo så listan tomten når, vilket sätt du föreslår?",
+    Item1: 'URL("Items/XmasFeeling.webp")',
     Btn1: {
       Text: "Slangbella",
       isCorrect: false,
@@ -51,6 +53,7 @@ const pages = [
   {
     Headers: "Mata tomtens renar!",
     Text: "Vi står nu utanför tomtens hus, vi i luften känna det på pepparkakor bjuds. Vi mot hans renar ler, som visar oss runt i detta vinterkvarter. I gengäld vi tillbaka ge, morötter, glass eller kycklingfilé.",
+    Item1: 'URL("Items/XmasFeeling.webp")',
     Btn1: {
       Text: "Morötter",
       isCorrect: true,
@@ -71,6 +74,7 @@ const pages = [
   {
     Headers: "Julkören sprider stämning!",
     Text: "Hej tomtegubbar och tänd ett ljus, kören sjunger för varje grannhus! En jultext dem är osäkra på, kan du hjälpa dem att texten återfå? 'Jag vill ha ...'",
+    Item1: 'URL("Items/XmasFeeling.webp")',
     Btn1: {
       Text: "Mer grisfötter",
       isCorrect: false,
@@ -91,6 +95,7 @@ const pages = [
   {
     Headers: "Ingen jul utan snögubbe!",
     Text: "Lisa snöbollar rulla, när hon ställt dem på varann blir det väldigt effektfulla. Med morot och pinne hon använder sitt barnasinne. Kan du se vad som saknas på gubben här, eller blir resultatet sisådär?  ",
+    Item1: 'URL("Items/XmasFeeling.webp")',
     Btn1: {
       Text: "Öga",
       isCorrect: true,
@@ -111,6 +116,7 @@ const pages = [
   {
     Headers: "Hugga gran!",
     Text: "I varje hem den ofta står och på julafton man runt den går. Man klär den med hoppfulla ljus och glitter, som gör att barnen fylls av fnitter. Hur kan vi få granen hem, ett verktyg behövs så lägg på en rem. ",
+    Item1: 'URL("Items/XmasFeeling.webp")',
     Btn1: {
       Text: "Ståltråd",
       isCorrect: false,

@@ -5,3 +5,12 @@ Om man hinner vill jag dölja en julgransstjärna på någon av bilderna.
 
 Definera mer rädda julen! Kanske tomten kan komma fram i slutet och tacka dig för att du spridit julstämning!
 
+töm inventory i slutet
+
+spela igen knapp
+
+Headers i plural i array
+
+Byta ut julkulor mot julstämning
+
+
