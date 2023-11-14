@@ -23,6 +23,7 @@ let inventory = [];
 
 /**Not needed in this case, can be used to get a good overview of the flow */
 function main() {
+  loadGameFromLS();
   moveOn();
 }
 
@@ -87,6 +88,7 @@ function hideMission() {
 function checkAnswer(isCorrect, Item1, nextPage) {
   if (isCorrect === true) {
     inventory.push(Item1);
+    saveGameToLS();
     displayInventoryCount();
     showMessageRightAnswer(nextPage);
     playCorrectSound();
@@ -193,6 +195,38 @@ function goToNextpage(pageIndex) {
   activepage = pageIndex;
   moveOn();
 }
+
+/**Saves inventory and activepage to local storage */
+function saveGameToLS() {
+  const saveData = {
+    inventory: inventory,
+    activepage: activepage,
+  };
+
+  localStorage.setItem("saveData", JSON.stringify(saveData));
+}
+
+/**Loads inventory and activepage from local storage. If the saved data is found, it updates the game */
+function loadGameFromLS() {
+  const savedDataString = localStorage.getItem("saveData");
+  if (savedDataString) {
+    const savedData = JSON.parse(savedDataString);
+    inventory = savedData.inventory;
+    activepage = savedData.activepage;
+  }
+}
+
+/* function saveGameToLS() {
+  const inventoryString = JSON.stringify(inventory);
+  localStorage.setItem("inventory", inventoryString);
+}
+
+function loadGameFromLS() {
+  if (localStorage.key("inventory")) {
+    const inventoryString = localStorage.getItem("inventory");
+    inventory = JSON.parse(inventoryString);
+  }
+} */
 
 /* function addName() {
     const button = document.getElementById("introBtn");
