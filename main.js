@@ -38,7 +38,7 @@ function moveOn() {
   const Button1 = document.querySelector("#option0");
   const Button2 = document.querySelector("#option1");
   const Button3 = document.querySelector("#option2");
-  const Item1 = document.getElementsByClassName("item0"); //Inventory
+  const Item1 = document.getElementById("item0"); //Inventory
   const body = document.getElementById("body");
   //Activepage from mission array
   const page = pages[activepage];
@@ -99,12 +99,10 @@ function checkAnswer(isCorrect, Item1, nextPage) {
 
 /**Update inventory length to show quantity*/
 function displayInventoryCount() {
-  const inventoryCount = document.querySelector(".item0");
+  const inventoryCount = document.querySelector("#item0");
   inventoryCount.textContent = inventory.length;
-
-  /*  let currentCount = parseInt(inventory.innerText);
-  inventory.innerText = currentCount + 1; */
 }
+
 /**criteria for when the correct answer should be displayed. On index 5 nothing is displayed.
  * @param {number} nextPage
  */
@@ -156,17 +154,34 @@ function checkEnd() {
     message.textContent = "Bra jobbat du har verkligen spridit julklädje!";
     document.body.appendChild(message);
 
-    displayEnd();
+    decreaseInventory();
   }
 }
 
-function displayEnd() {
-  for (let i = 0; i < inventory.length; i++) {
+/**Remove item from the inventory with delay*/
+function decreaseInventory() {
+  for (let i = inventory.length - 1; i >= 0; i--) {
     const item = inventory[i];
     setTimeout(function () {
-      console.log(item);
-    }, 1000 * i);
+      inventory.pop();
+      displayInventoryCount();
+      displayItem();
+    }, 1000 * (inventory.length - i));
   }
+}
+
+/**Displays the inventory-symbol at a random postion*/
+function displayItem() {
+  const XmasSpirit = document.getElementById("inventorySymbol");
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
+
+  const randomX = Math.floor(Math.random() * (windowWidth - 50));
+  const randomY = Math.floor(Math.random() * (windowHeight - 50));
+
+  XmasSpirit.style.position = "absolute";
+  XmasSpirit.style.left = randomX + "px";
+  XmasSpirit.style.top = randomY + "px";
 }
 
 /**go to next page and show missionwrapper again
