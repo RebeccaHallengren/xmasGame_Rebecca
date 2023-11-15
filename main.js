@@ -86,13 +86,12 @@ function hideMission() {
  *
  */
 function checkAnswer(isCorrect, Item1, nextPage) {
-  if (isCorrect === true) {
+  if (isCorrect) {
     inventory.push(Item1);
-    saveGameToLS();
     displayInventoryCount();
     showMessageRightAnswer(nextPage);
     playCorrectSound();
-  } else if (isCorrect === false) {
+  } else {
     showMessageWrongAnswer(nextPage);
     playWrongSound();
   }
@@ -204,6 +203,7 @@ function goToNextpage(pageIndex) {
     element.style.display = "block";
   });
   activepage = pageIndex;
+  saveGameToLS();
   moveOn();
 }
 
