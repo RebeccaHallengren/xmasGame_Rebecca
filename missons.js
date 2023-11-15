@@ -31,7 +31,7 @@ const pages = [
 
   {
     Header: "Julbrevet har kommit bort!",
-    Text: "Om man inte skickat har, får man oftast det som blev kvar. Milo har glömt skicka sin önskemlista till tomten i år, det skulle han gjort i förrgår. Hjälp Milo så listan tomten når, vilket sätt du föreslår?",
+    Text: "Om man inte skickat har, får man oftast det som blev kvar. Milo har glömt skicka sin önskelista till tomten i år, det skulle han gjort i förrgår. Hjälp Milo så listan tomten når, vilket sätt du föreslår?",
     Item1: 'URL("Items/XmasFeeling.webp")',
     Btn1: {
       Text: "Slangbella",
