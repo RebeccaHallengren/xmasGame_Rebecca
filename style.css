@@ -104,3 +104,19 @@
   font-family: griffy;
   margin-top: 400px;
 }
+
+.playAgain {
+  float: right;
+  color: white;
+  background-color: rgb(98, 6, 6);
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 10px 5%;
+  cursor: pointer;
+}
+
+.playAgain:hover {
+  background-color: gold;
+  color: black;
+}

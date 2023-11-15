@@ -43,7 +43,7 @@ function moveOn() {
   //Activepage from mission array
   const page = pages[activepage];
 
-  header.textContent = page.Headers;
+  header.textContent = page.Header;
   text.textContent = page.Text;
   Button1.textContent = page.Btn1.Text;
   Button2.textContent = page.Btn2.Text;
@@ -98,6 +98,16 @@ function checkAnswer(isCorrect, Item1, nextPage) {
   }
 }
 
+/**Saves inventory and activepage to local storage */
+function saveGameToLS() {
+  const saveData = {
+    inventory: inventory,
+    activepage: activepage,
+  };
+
+  localStorage.setItem("saveData", JSON.stringify(saveData));
+}
+
 /**Update inventory length to show quantity*/
 function displayInventoryCount() {
   const inventoryCount = document.querySelector("#item0");
@@ -147,14 +157,15 @@ function checkEnd() {
     message.textContent =
       "Du har inte spridit något julglädje alls, du är en grinch!";
     document.body.appendChild(message);
+    reloadGame();
   } else if (activepage === 5 && inventory.length > 4) {
     document.body.style.backgroundImage = "URL('Items/rightEnd.png')";
     hideMission();
     message.className = "end-text";
     message.textContent = "Bra jobbat du har verkligen spridit julklädje!";
     document.body.appendChild(message);
-
     decreaseInventory();
+    reloadGame();
   }
 }
 
@@ -196,16 +207,6 @@ function goToNextpage(pageIndex) {
   moveOn();
 }
 
-/**Saves inventory and activepage to local storage */
-function saveGameToLS() {
-  const saveData = {
-    inventory: inventory,
-    activepage: activepage,
-  };
-
-  localStorage.setItem("saveData", JSON.stringify(saveData));
-}
-
 /**Loads inventory and activepage from local storage. If the saved data is found, it updates the game */
 function loadGameFromLS() {
   const savedDataString = localStorage.getItem("saveData");
@@ -214,6 +215,20 @@ function loadGameFromLS() {
     inventory = savedData.inventory;
     activepage = savedData.activepage;
   }
+}
+
+/** create button to playagin. Removes item in local storage and reload game.*/
+function reloadGame() {
+  const playAgin = document.createElement("button");
+  playAgin.className = "playAgain";
+  playAgin.textContent = "Spela igen!";
+
+  document.body.appendChild(playAgin);
+
+  playAgin.addEventListener("click", function () {
+    localStorage.removeItem("saveData");
+    window.location.reload();
+  });
 }
 
 /* function saveGameToLS() {
